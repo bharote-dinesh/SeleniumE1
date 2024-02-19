@@ -27,11 +27,11 @@ public class EventFiringDriverMethod {
 		WebDriver	driver =new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.get("https://www.instagram.com/");
+		driver.get("https://www.myntra.com/");
 		
 		EventFiringWebDriver efwd = new EventFiringWebDriver(driver);
 		File src = efwd.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./screenshots/instagram.jpg");
+		File dest = new File("./screenshots/myntra.jpg");
 		Files.copy(src, dest);
 	    
 

@@ -1,4 +1,4 @@
-package webElementMethods;
+package assignment;
 
 import java.time.Duration;
 import java.util.List;
@@ -13,7 +13,7 @@ import com.neilalexander.jnacl.crypto.xsalsa20;
 
 import net.bytebuddy.implementation.bytecode.Division;
 
-public class Task {
+public class Flipkart {
 	public static void main(String[] args) throws InterruptedException {	
 	
      WebDriver driver =new ChromeDriver();
@@ -26,7 +26,7 @@ public class Task {
     WebElement searchBox = driver.findElement(By.name("q"));
     Thread.sleep(2000);
     //search hp laptop into search textfield
-    searchBox.sendKeys("hp laptop");
+   // searchBox.sendKeys("hp laptop");
     //click on search button
     //driver.findElement(By.xpath("//button[@type='submit'")).click();
     driver.findElement(By.xpath("//button[@title='Search for Products, Brands and More']")).click();

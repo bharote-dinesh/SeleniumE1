@@ -20,9 +20,9 @@ public class ByImplicitly {
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		 driver.get("https://www.flipkart.com/");
 		 
-		 TakesScreenshot tScreenshot =(TakesScreenshot)driver; //to perform typecasting
+		 TakesScreenshot tS =(TakesScreenshot)driver; //to perform typecasting
 		 
-		 File src = tScreenshot.getScreenshotAs(OutputType.FILE); //to take the screenshot of webpage
+		 File src = tS.getScreenshotAs(OutputType.FILE); //to take the screenshot of webpage
 		 
 		 File dest = new File("./screenshots/flipkart.png");
 		 
